@@ -8,6 +8,9 @@ pipeline {
                     echo "Multiline shell steps works too"
                     ls -alh
             '''
+        sh  '''
+                    pylint --disable=R,C,W1203,W1202 app.pyç
+            '''
       }
     }
 
