@@ -9,7 +9,7 @@ pipeline {
                     ls -alh
             '''
         sh  '''
-                    pylint --disable=R,C,W1203,W1202 app.py
+                    pylint3 --disable=R,C,W1203,W1202 app.py
             '''
       }
     }
