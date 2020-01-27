@@ -11,7 +11,7 @@ pipeline {
                     hadolint Dockerfile
             '''
         sh  '''
-                    kubectl create deployment udacityp5k8sv2 --image=caskeep/udacityp5
+                    kubectl apply -f udacasp5.yaml
             '''
       }
     }
