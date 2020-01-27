@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: udacity-dep-v2
+spec:
+  replicas: 3
+  template:
+    metadata:
+    spec:
+      containers:
+      - name: udacityp5
+        image: caskeep/udacityp5
+        ports:
+        - containerPort: 8000
